@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,400;1,800&display=swap');
+
+
+a{
+    text-decoration: none;
+    color: #111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* height: 4.5rem; */
+    align-items: center;
+    /* max-width: 1500px; */
+    background-color: #F9F9F9;
+    padding: 2rem 0;
+    transition: margin-left .5s;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 2px rgb(0 0 0 / 24%)
+}
+
+.header img{
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.header h1{
+    text-transform: capitalize;
+    padding-left: 2rem;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 36px;
+    height: 36px;
+    margin-left: 50px;
+    background: #818181;
+    border-radius: 50%;
+        transition: 0.3s;
+}
+
+.sidebar .closebtn:hover {
+    background: #f1f1f1;
+}
+
+.Slider{
+    padding: 8px 8px 8px 32px;
+    color: #f1f1f1;
+
+}
+
+#num-elementos-slider, #num-elementos-slider-2{
+    height: 100% !important;
+    margin-top: 2.5rem;
+}
+
+
+/* Estilos para el botón de abrir el menú */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.cont-btn-menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 35px;
+    left: 35px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 2px rgb(0 0 0 / 24%);
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    transition: .3s;
+    /* padding: .2rem; */
+}
+
+.cont-btn-menu:hover{
+    background-color: #f0f0f0;
+}
+#openNav {
+    width: 41px;
+    height: 41px;
+    transform: translatey(3px);
+    /* margin: 2rem; */
+
+}
+
+
+.contenedor{
+    margin-top: 4rem;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin-left .5s;
+}
+.alerta{
+    transition: all .5s ease-in;
+}
+
+#alerta-mos{
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 2px rgb(0 0 0 / 24%);
+    transition: .5s ease-in-out;
+}
+
+.cont-img-alerta{
+    background: #909;
+    height: 100%;
+    width: 100px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50%);
+    border-radius: 60%;
+}
+.img-alerta{
+    width: 70px;
+    height: 70%;
+}
+
+.texto-alerta{
+    padding-left: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+#upload-data{
+    width: 18rem;
+    height: 60px;
+    line-height: 60px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    font-size: .8rem;
+}
+
+#upload-data a{
+    cursor: pointer;
+    transition: .3s;
+}
+
+#upload-data a:hover{
+    cursor: pointer;
+    color: red;
+}
+.cont_principal_fig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+    margin: 6rem 3rem 2rem 3rem;
+    transition: margin-left .5s;
+}
+
+.cont_secundario_fig{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_principal_fig h2{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.cont_fig{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: repeat(3,20rem);
+    gap: 2rem;
+    margin:1rem;
+    justify-items: center;
+}
+
+.fig{
+    width: 230px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 2px rgb(0 0 0 / 24%)
+}
+
+.fig0{
+    grid-column:1/3;
+    grid-row: 1/3;
+    width: 100%;
+}
+
+#grafico-pastel{
+    height: 100%;
+}
+
+.fig1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+}
+
+#grafico-lineas{
+    width: 100%;
+    height: 100%;
+}
+
+.fig2{
+    /* width: 320px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fig2 .hijo-fig2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: #f2f2f2;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+#tiempo_carga, #cantidad_caracteres, #peso_archivo{
+    padding: 0 .9rem;
+}
+
+.img-fig2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 20%;
+    height: 100%;
+    background-color: #2961ED;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 2px rgb(0 0 0 / 24%);
+}
+
+
+.fig3{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.fig3 > div:nth-child(1){
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    /* padding: 1rem; */
+}
+/* 
+.fig3 > div:nth-child(2){
+    width: 85%;
+    height: 100%;
+} */
+
+#graficos_palabras{
+    width: 100%;
+    height: 100%;
+}
+
+.fig4{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+}
+
+/* .fig4 > div:nth-child(1){
+    background-color: #F2F2F2;
+    height: 20%;
+    padding: 1rem;
+} */
+
+.contenedor_graph_palabras{
+    display: flex;
+    height: 20rem;
+}
+
+.contenedor_graph_palabras > div{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.user-select-none .svg-container{
+    width: 100%;
+}
+
+#graficos_palabras_2{
+    height: 99%;
+    width: 100%;
+}

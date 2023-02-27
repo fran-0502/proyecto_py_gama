@@ -1,0 +1,4 @@
+#titulo falta acento
+#todas las veces que aparesca grafico = gràfico
+#todas los titulos en mayusculas 
+#analisis = análisis
